@@ -1,0 +1,11 @@
+// .edit-wrap {
+//   margin:$horizontal-spacing;
+// }
+
+.edit-form-wrap{
+  background-color: #fff;
+  padding:  0px 0px $line-spacing $line-spacing ;
+  .nut-row-flex-nowrap{
+    padding:$line-spacing 20px  0px 0px ;
+  }
+}

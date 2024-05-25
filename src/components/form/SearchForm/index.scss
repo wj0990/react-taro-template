@@ -1,0 +1,33 @@
+.taro-form{
+  font-size: $lg-font-size-md;
+  font-weight: 410;
+  .taro-form-item{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin: 2px 0px;
+    .taro-form-item-label {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .taro-form-item-left{
+      min-width: 100px;
+    }
+    .taro-form-item-input{
+      flex: 1;
+      margin: 0 0px;
+      .descriptions-wrap{
+        display: flex;
+        width: 100%;
+      }
+    }
+    .taro-form-item-right{
+      min-width: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+    }
+  }
+}

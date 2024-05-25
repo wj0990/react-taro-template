@@ -1,0 +1,26 @@
+.card-wrap {
+  margin: 0 10px 10px 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #fff;
+}
+.card-title {
+  position: relative;
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 19px;
+}
+.card-title-extra{
+  position: absolute;
+  right: 20px;
+  top: 2px;
+  font-size: small;
+}
+.nut-empty{
+  padding:12px 0 !important;
+}
+.card-footer {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}

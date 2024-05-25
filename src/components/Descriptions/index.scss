@@ -1,0 +1,57 @@
+.descriptions-wrap {
+  display: flex;
+  flex-direction: column;
+  .descriptions-title {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  .descriptions-content{
+    margin: 0 10px;
+  }
+  .descriptions-content-extra{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content:space-between;
+    margin: 0 10px;
+  }
+  // .descriptions-item-list{
+  //   display: flex;
+  //   width: '100%';
+  // }
+  .descriptions-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .descriptions-label {
+    color:'#101010 ';
+    font-size: $font-size;
+    margin-right:14px;
+  }
+  .descriptions-value {
+    font-size: $font-size;
+    color:'#101010';
+    max-width: 60%;
+    overflow:'hidden';
+    text-overflow: hidden;
+    white-space: nowrap;
+  }
+} 
+.descriptions-column2 .descriptions-content .descriptions-item-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* 控制项目在一行上不足空间时如何换行 */
+}
+.descriptions-column2 .descriptions-content .descriptions-item{
+  width: 50%;
+  flex-basis: calc(50% - 10px); /* 每列的宽度为33.33%，减去一些间距 */
+  margin: 5px; /* 间距 */
+  // background-color: blue;
+}
+.single-line {
+  width:'1000%' !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

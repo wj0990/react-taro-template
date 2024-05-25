@@ -1,0 +1,23 @@
+.upload-wrap-title{
+  font-size: $sm-font-size;
+  color:#9A9A9A;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  height: 100vh;
+}
+
+.movable-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.movable-view {
+  width: 100%;
+  height: 100%;
+}

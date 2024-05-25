@@ -1,0 +1,44 @@
+.button-add-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal !important;
+  padding: 0 !important;
+  background-color:transparent;
+  &:after{
+    border:none;
+    background-color: transparent;
+  }
+}
+.button-scan-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal !important;
+  padding: 0 !important;
+  background-color:transparent;
+  &:after{
+    border:none;
+    background-color: transparent;
+  }
+  .image {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.link-button {
+  display: flex;
+  background: none;
+  border: none;
+  color: #101010 !important;
+  align-items: center;
+  font-size:$sm-font-size;
+  // font-weight: 100;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  &:after{
+    border:none;
+  }
+}

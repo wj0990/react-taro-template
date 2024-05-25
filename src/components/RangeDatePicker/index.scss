@@ -1,0 +1,57 @@
+.range-date-picker-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  nut-cell {
+    width: 50%;
+    border: 0.05rem solid #ccc;
+    padding: 6px 12px;
+  }
+}
+
+.range-date-picker-header {
+  padding-bottom: 10px;
+
+  .tags-wrap {
+    justify-content: space-between;
+
+    .tags {
+      width: 100%;
+      padding: 6px 12px;
+      margin: 0 5px;
+      font-size: 14px;
+    }
+
+  }
+}
+
+.ange-date-pickerinput-content {
+  display: flex;
+  flex: 1;
+
+  .range-date-picker-cell {
+    border-radius: 3px !important
+  }
+}
+
+.range-date-picker-container .nut-cell {
+  // background-color: transparent;
+  height: 34px;
+  // line-height: 34px;
+  margin: 0;
+  border: 0.05rem solid #ccc;
+  --nutui-cell-padding: 6px 12px 6px 6px;
+  --nutui-cell-border-radius: 0;
+  // --nutui-cell-color: blue;
+  --nutui-cell-background: transparent;
+  --nutui-cell-box-shaow: none;
+}
+
+.range-date-picker-start {
+  margin-right: 5px;
+}
+
+.range-date-picker-end {
+  // margin-left: 5px;
+}

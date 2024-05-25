@@ -1,0 +1,137 @@
+$platform: web; // 设置默认平台为H5
+
+// 下补白
+.bottom-margin{
+  margin-bottom: 16px !important;
+}
+.cms-wrap .nut-col {
+  margin-bottom: 0px;
+}
+.form-item-wrap {
+//  padding-bottom: 5px;
+  font-size: $font-size;
+  position: relative;
+  .taro-form-item {
+    margin-top:0 !important;
+    .taro-form-item-label-bordered{
+      border-bottom: 1px solid $form-border-color;
+    }
+  }
+  .taro-form-item-bordered {
+    .taro-form-item-label{
+      border-bottom: 1px solid $form-border-color;
+    }
+  }
+  .taro-form-err-item{
+    margin-bottom: 16px !important;
+  }
+  .err-text{
+    position: absolute;
+    bottom: -18px;
+    left: 0px;
+  }
+  .taro-form-item-required {
+    .taro-form-item-left {
+      font-size:$font-size;
+      &:before {
+        display: inline-block;
+        margin-inline-end: 4px;
+        color: #ff4d4f;
+        font-size: 14px;
+        font-family: SimSun,sans-serif;
+        line-height: 1;
+        content: "*";
+      }
+    }
+  }
+  .taro-form-item-left{
+    min-width: 20%;
+    padding-right: 5px;
+    font-size: $font-size;
+    display: flex;
+    align-items: center;
+  }
+  
+  taro-form-item-right{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    max-height: 36px;
+    background-color: red;
+  }
+  .taro-form-item-content{
+    position: relative;
+    display: flex;
+    flex:1;
+  }
+  .taro-form-item-audio, .taro-form-item-radio{
+    flex-direction: row-reverse;
+  }
+  .radio-group{
+    text-align: right;
+  }
+  .taro-form-item-input {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    margin: 0 !important;
+  
+    >.input-box{
+      > .input-wrap{
+        text-align: right;
+      }
+    }
+    .date-picker-container, >.input-box > .input-wrap{
+      text-align: right;
+    }
+  
+    .select-wrap .select-input-wrap .select-text{
+      width: 100%;
+      text-align: right;
+    }
+
+  }
+  .select-wrap .select-input-wrap {
+    flex-direction: column-reverse;
+
+  }
+}
+.submit-btn {
+  width: 100%;
+  height: 36px;
+  font-size: $font-size;
+  line-height: 36px;
+  border-radius: 18px !important;
+}
+.footer-btn-group {
+  display: flex;
+  padding-top: 10px;
+  // padding: 0 10%;
+  .submit-btn {
+    margin:0 10px;
+  }
+  :after{
+    border:none !important;
+    // border-color:red !important;
+    // border-radius: 18px !important; 
+  }
+}
+
+@if $platform == 'miniProgram' {
+   /* 设置 Label 组件内的第一个 <label> 元素的样式 */
+  .taro-form-line .form-item-wrap .taro-form-item .taro-form-item-label {
+    &label:first-child{
+      /* 修改 label 元素的样式 */
+      display: flex;
+      width: 100%;
+    }
+  }
+} @else {
+  // 微信小程序里会报错 小程序里注释
+/* 设置 Label 组件内的第一个 <label> 元素的样式 */
+  // .taro-form-line .form-item-wrap .taro-form-item .taro-form-item-label >:first-child {
+  //   /* 修改 label 元素的样式 */
+  //   display: flex;
+  //   width: 100%;
+  // }
+}
